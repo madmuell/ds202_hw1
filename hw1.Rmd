@@ -1,0 +1,107 @@
+---
+title: "HW1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+---
+title: 'Homework #1'
+author: Madalyn Mueller
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This homework is more or less a tutorial that helps you set up the coding environment used in this course, and familiarizes you with the format of the assignment submission. 
+As a pre-requisite of this homework, first install R, and then the RStudio (the free version of Rstudio Desktop). 
+
+Please respond to all questions. If the question asks you to do something on your laptop and you have finished that, just say "Done". 
+
+1. Create a folder named `ds202_hw1`, and **either** create an RMarkDown file `hw1.Rmd` under this folder **or** move the provided template into this folder. `hw1.Rmd` will include your solutions. The file and folder names are *case-sensitive*, which means `hw1.Rmd` and `HW1.rmd` are different. *It is crucial to follow the exact folder structure and file names* in this course, so that your homework can be reproduced. The correct folder structure is
+
+    ```
+    ds202_hw1
+    |-- hw1.Rmd
+    |-- hw1.html (generated after knitting)
+    ```
+    
+    Answer: Done
+
+2. Write your name in the YAML of your homework `Rmd` file.
+
+    Answer: Done
+
+3. Write a paragraph to introduce yourself. Set your name in bold font and your major in italic. 
+
+    Answer: Hello, my name is **Madalyn Mueller**. I am a junior majoring in *advertising* and minoring in data science and event management. I am 21 years old, cows are my favorite animal, and my favorite color is purple. I currently work three jobs. I am a Student Ambassador for the Greenlee School of Journalism and Communication, I am a Student Wellness Assistant in the office of Sorority and Fraternity Engagement, and I am a Digital Media Assistant for Practical Farmers of Iowa.
+  
+4. Write a paragraph describing a job that you think is related to data science. Include a hyperlink and an image. Make sure your answer is in a nice format to read. 
+
+    Answer: I think that the advertising field is related to data science. In advertising, we are always using data to see who is engaging with the advertisments and we use it to target certain demographics. There is a lot of research that needs to be done before you can design a campaign, and we can use data science to simplify that data and make it easier to read for clients. Here is a link (https://towardsdatascience.com/data-science-within-the-advertising-industry-469c4d728635). ![Mad Men](https://cdn.business2community.com/wp-content/uploads/2013/11/madmen_standard-300x184.jpg)
+  
+5. What data topic will you be most interested in? (Optional) Provide a source of such dataset if you have.
+
+    Answer: I know this isn't a data topic, but I have never used R before and I know that it is more commonly used than Python, so I am excited to learn how to use it!
+  
+6. To check that your R and Rstudio installation is correct, find the version of R by entering `version` into the R console. Include this command into a R code trunk in your solution `Rmd` file to have it automatically printed in the knitted html file. 
+
+    Answer: 
+    ```{r}
+    version
+    ```
+  
+7. Install git. 
+    - If you are on Windows: 
+        a. Install [Git for Windows](https://gitforwindows.org/). In the coming weeks we will use the Git Bash (but not the Git GUI). 
+        b. After installation, set up Rstudio to use Git bash as the shell for the Terminal: Open RStudio, click Tools--Global Options--Terminal; under **Shells**, select Git Bash; click OK. 
+        c. In the main menu of RStudio: click Tools--Terminal--New Terminal. If you have a `$` before your prompt, then you should be good to go.
+    - If you are on Linux or macOS, Git has probably been installed by default, so you do not need to install anything. Just click the Terminal tab (above the R Console).
+
+    Answer: Done
+  
+8. What is the version of your Git? To find out, go to the Terminal tab in RStudio (right to the Console tab), and type in the following command. If it works, this shows that the setup of your terminal and Git is correct. 
+<!-- Then explore the bash command line and Git. -->
+
+    ```
+    git --version
+    ```
+
+    Answer: git version 2.15.0
+  
+9. Configure your git username and user email by modifying and entering the following commands into the terminal
+
+    ```
+    git config --global user.name "Madalyn Mueller"
+    git config --global user.email "madmuell@iastate.edu"
+    ```
+
+    Answer: Done
+  
+
+10. Register a [GitHub](https://www.github.com) account. What is your username?
+
+    Answer: madmuell
